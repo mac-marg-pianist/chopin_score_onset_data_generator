@@ -44,6 +44,8 @@ class Onset:
 
   def _set_top_note(self):
     NOTE_TYPES = ["half", "quarter", "eighth", "16th", "dot"]
+    SHORTEST_NOTE_GROUPS = ["32nd", "64th", "256th", "1024th"]
+    LONGEST_NOTE_GROUPS = ["maxima", "long", "breve", "whole"]
     if len(self.notes) > 0:
       pitch_numbers = [x.pitch[1] for x in self.notes]
       max_pitch_index = pitch_numbers.index(max(pitch_numbers))
@@ -52,9 +54,9 @@ class Onset:
         self.top_note_type[top_note[0]] = 1
       if top_note[1] == 1:
         self.top_note_type["dots"] = 1
-      if top_note[0] == "32nd" or top_note[0] == "64th" or top_note[0] == "256th" or top_note[0] == "1024th":
+      if top_note[0] in SHORTEST_NOTE_GROUPS:
         self.top_note_type["16th"] = 1
-      if top_note[0] == "whole" or top_note[0] == "breve":
+      if top_note[0] in LONGEST_NOTE_GROUPS:
         self.top_note_type["half"] = 1
 
   def _set_dynamic_type(self):
