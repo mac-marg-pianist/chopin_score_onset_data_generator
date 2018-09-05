@@ -3,19 +3,20 @@ Various data generator scripts in the `data_generator` folder uses third party G
 
 ## How to genereate Training Data Set
 
-1. Git clone current repository.
+1. Git clone current repository and go inside `chopin_score_data_generator` folder.
 ```console
 $ git clone https://github.com/mac-marg-pianist/chopin_score_data_generator.git
+$ cd chopin_score_data_generator
 ```
 
-2. Download `musicXML_parser` repository.
+2. Download `musicXML_parser` repository in the `chopin_score_data_generator`.
 ```
-$ git clone https://github.com/mac-marg-pianist/musicXML_parser
+chopin_score_data_generator$ git clone https://github.com/mac-marg-pianist/musicXML_parser
 ```
 
 3. Download `chopin piano score dataset` repository.
 ```
-$ git clone https://github.com/mac-marg-pianist/chopin_piano_score_dataset.git
+chopin_score_data_generator$ git clone https://github.com/mac-marg-pianist/chopin_piano_score_dataset.git
 ```
 
 4. Go to `data_generator` folder and run python file.
