@@ -25,8 +25,12 @@ $ cd data_generator
 $ python3 complete.py
 ```
 
-5. Go to top directory and check generated output folders.
+5. Go to top project folder and check output directory.
+e.g) `complete` folder is a generated output directory.
 
 ```
 $ cd ..
+$ ls
+README.md                  complete                   musicXML_parser
+data_generator .           chopin_piano_score_dataset 
 ```
