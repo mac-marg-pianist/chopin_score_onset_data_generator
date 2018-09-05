@@ -52,9 +52,9 @@ class Onset:
         self.top_note_type[top_note[0]] = 1
       if top_note[1] == 1:
         self.top_note_type["dots"] = 1
-      if top_note[0] == "32th":
+      if top_note[0] == "32nd" or top_note[0] == "64th" or top_note[0] == "256th" or top_note[0] == "1024th":
         self.top_note_type["16th"] = 1
-      if top_note[0] == "whole":
+      if top_note[0] == "whole" or top_note[0] == "breve":
         self.top_note_type["half"] = 1
 
   def _set_dynamic_type(self):
@@ -201,7 +201,7 @@ class OnsetCreator:
     # convert to numpy array
     all_onsets = np.array([[*x.top_note_type.values(), x.p_group, x.f_group,
     x.ritardando, x.cresc, x.decresc, x.pedal, x.first_beat, x.accent, x.staccato] for x in onset_group.children])
-    
+
     save_to_npy(self.output_path, all_onsets)
     
 # TODO : make file save module
