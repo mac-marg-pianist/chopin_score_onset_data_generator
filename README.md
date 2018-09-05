@@ -25,12 +25,12 @@ chopin_score_data_generator$ cd data_generator
 chopin_score_data_generator/data_generator$ python3 complete.py
 ```
 
-5. Go to top project folder and check output directory.
-e.g) `complete` folder is a generated output directory.
+5. Go to top project directory and check output directory. : `essence`, `complete` or `moderate`.
+e.g) `complete` is a generated output directory name.
 
 ```sys
 chopin_score_data_generator/data_generator$ cd ..
 chopin_score_data_generator$ ls
-README.md                  complete.py                   musicXML_parser
+README.md                  complete                          musicXML_parser
 data_generator             chopin_piano_score_dataset 
 ```
