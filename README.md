@@ -11,7 +11,7 @@ $ cd chopin_score_data_generator
 
 2. Download `musicXML_parser` repository in the `chopin_score_data_generator`.
 ```
-chopin_score_data_generator$ git clone https://github.com/mac-marg-pianist/musicXML_parser
+chopin_score_data_generator$ git clone https://github.com/mac-marg-pianist/musicXML_parser.git
 ```
 
 3. Download `chopin piano score dataset` repository.
